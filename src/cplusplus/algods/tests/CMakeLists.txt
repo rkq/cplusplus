@@ -1,8 +1,9 @@
+include_directories("../")
 file(GLOB srcs ../*.cc)
 file(GLOB test_srcs *.cc)
-add_executable(cplusplus_tests ${srcs} ${test_srcs})
+add_executable(algods_tests ${srcs} ${test_srcs})
 target_link_libraries(
-  cplusplus_tests
+  algods_tests
   gtest
   gtest_main
 )
